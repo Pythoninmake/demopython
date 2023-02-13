@@ -19,15 +19,15 @@
      <form method="POST" class="p-3 shadow">
          {% csrf_token %}
          <div class="form-group">
-        <input type="text" class="form-control" name="name" placeholder="Taskname">
+        <input type="text" class="form-control" name="name" placeholder="Taskname" required>
          </div>
          <br>
           <div class="form-group">
-        <input type="text" class="form-control" name="priority" placeholder="Enter your priority">
+        <input type="text" class="form-control" name="priority" placeholder="Enter your priority" required>
           </div>
          <br>
          <div class="form-group">
-             <input type="date" class="form-control" name="date" placeholder="Enter your date">
+             <input type="date" class="form-control" name="date" placeholder="Enter your date" required>
          </div>
          <br>
          <input type="submit" class="btn btn-success">
